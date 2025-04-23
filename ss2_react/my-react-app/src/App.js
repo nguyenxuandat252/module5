@@ -1,23 +1,20 @@
 import logo from './logo.svg';
 import './App.css';
+import React from "react";
+
+
 
 function App() {
+  const element = React.createElement('ul',null,
+      React.createElement('li',null,'Hà Pội'),
+      React.createElement('li',null,'Đà Nẵng'),
+      React.createElement('li',null,'Hải Phòng'),
+      React.createElement('li',null,'Hồ Chí Minh'),
+      React.createElement('li',null,'Cần Thơ')
+  );
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {element}
     </div>
   );
 }
